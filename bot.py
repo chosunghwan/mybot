@@ -1,6 +1,8 @@
 import discord
-from discord.ext import commands
 import os
+import asyncio
+from discord.ext import commands
+import datetime 
 
 client = discord.Client()
 
@@ -10,6 +12,8 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print('------')
+    game = discord.Game("Lost Ark")
+    await client.change_presence(status=discord.Status.online, activity=game)
 
 @client.event
 async def on_message(message):
@@ -182,6 +186,18 @@ async def on_message(message):
         embed.add_field(name="\t v 32줄 V\t",value="문양\r\n이난나추천")
         embed.add_field(name="\t v 25줄 V\t",value="타일파괴\r\n 파메 중앙 금지")
         embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/02/02/bbs/i15252768436.png')
-        await message.channel.send(embed=embed)         
+        await message.channel.send(embed=embed)      
+        
+    if message.content.startswith("노메"):
+        mt11 = message.content[3:5].split(" ")[0]
+        mt12 = message.content[5:7].split(" ")[0]
+        cmt11= int(mt11)
+        ccmt11 = cmt11*60
+        cmt12= int(mt12)
+        sumt= ccmt11 + cmt12
+        nt=sumt-100
+        
+        sumt2=str(datetime.timedelta(seconds=nt))
+        await message.channel.send(sumt2)   
 
 client.run(os.environ['token'])
