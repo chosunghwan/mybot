@@ -184,4 +184,4 @@ async def on_message(message):
         embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/02/02/bbs/i15252768436.png')
         await message.channel.send(embed=embed)         
 
-client.run('token')
+client.run(os.environ['token'])
