@@ -24,6 +24,7 @@ async def on_message(message):
         embed.add_field(name="\t v 비아키스 v \t",value="비아1\r\n비아2\r\n비아3\r\n하드미제작")
         embed.add_field(name="\t v 쿠크세이튼 v\t",value="쿠크1\r\n쿠크2\r\n쿠크3")
         embed.add_field(name="\t v 아브렐슈드 v\t",value="아브1\r\n아브2\r\n아브3\r\n아브4\r\n아브5\r\n아브6\r\n하드 미제작")
+        embed.add_field(name="\t v 그 외 기능 v\t",value="노메 0000(아브6장판생성시간계산)")
         await message.channel.send(embed=embed)
 
     if message.content =="발탄1":
@@ -150,7 +151,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)        
 
     if message.content =="아브4":
-        embed = discord.Embed(title="아브4",color=0x0000ff,description = "준비물 : 회폭,시정,화폭\r\n노란규브 = 구슬파괴후 구슬먹고 장판위 무력\r\n(구슬파괴자,노란구슬먹은사람은 장판밖에서 구체막기)\r\n파란큐브 = 전우조무력\r\n빨간큐브=오브획득후 마법진이동 나머지 무력\r\n파란큐브 = 변안전\r\n빨간큐브=모서리안전")
+        embed = discord.Embed(title="아브4",color=0x0000ff,description = "준비물 : 회폭,시정,화폭\r\n🟨노란규브 = 구슬파괴후 구슬먹고 장판위 무력\r\n(구슬파괴자,노란구슬먹은사람은 장판밖에서 구체막기)\r\n🟦파란큐브 = 전우조무력 / 변안전\r\n🟥빨간큐브=오브획득후 마법진이동 나머지 무력 / 모서리안전")
         embed.add_field(name="\t v 170줄 <\t",value="전멸기\r\n 첫 입장 색상")
         embed.add_field(name="\t v 160줄 v\t",value="형상변환")
         embed.add_field(name="\t v 135줄 v\t",value="형상변환\r\n120줄 전멸기 색상")
