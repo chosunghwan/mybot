@@ -98,7 +98,7 @@ async def on_message(message):
         embed.add_field(name="\t v 100줄 v\t",value="세이튼 찾기\r\n1-5-7-11 하트핑")
         embed.add_field(name="\t v 88줄 v\t",value="댄스 타임- 세이튼동작 따라하기")
         embed.add_field(name="\t v 60줄 v\t",value="반격 무력화\r\n보라색 방패가 없는곳에서 무력화")
-        embed.add_field(name="\t v 48줄 v\t",value="주사위(스페이드-하트 / 클로버-다이아)\r\n 6시 검검빨빨 거리두고 서기\r\n3인 감금 처음나오는 카드먹기\r\n1인 감금3번째카드")
+        embed.add_field(name="\t v 48줄 v\t",value="주사위(스페이드-하트 / 클로버-다이아)\r\n 6시 검검빨빨 거리두고 서기\r\n1인 감금 3번째 카드먹이기\r\n♣️ 감금♦️→♥️→♣️→♠️\r\n♠️ 감금♥️→♦️→♠️→♣️\r\n♥️ 감금♠️→♣️→♥️→♦️\r\n♦️ 감금♣️→♠️→♦️→♥️\r\n 3인 감금 1번째카드 먹기\r\n♣️ 무빙♣️→♠️→♦️→♥️ \r\n♥️ 무빙♥️→♦️→♠️→♣️\r\n♦️ 무빙♦️→♥️→♣️→♠️")
         embed.add_field(name="\t v 22줄 v\t",value="세이튼 찾기\r\n1-5-7-11 하트핑")
         embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/01/05/bbs/i13411451557.jpg')
         await message.channel.send(embed=embed)
