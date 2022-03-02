@@ -246,7 +246,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)         
 
 
-    if message.content =="아브6":
+    if message.content =="하브6":
         embed = discord.Embed(title="아브6",color=0x0000ff,description = "준비물 : 회수or암수/신속/시정")
         embed.add_field(name="\t v 225줄 <\t",value="1문양 아제나")
         embed.add_field(name="\t v 212줄 v\t",value="모래폭풍 - 디버프자는 모래폭풍 회피 훟 중력장파괴")
