@@ -98,7 +98,7 @@ async def on_message(message):
         embed.add_field(name="\t v 100줄 v\t",value="세이튼 찾기\r\n1-5-7-11 하트핑")
         embed.add_field(name="\t v 88줄 v\t",value="댄스 타임- 세이튼동작 따라하기")
         embed.add_field(name="\t v 60줄 v\t",value="반격 무력화\r\n보라색 방패가 없는곳에서 무력화")
-        embed.add_field(name="\t v 48줄 v\t",value="주사위(스페이드-하트 / 클로버-다이아)\r\n 6시 검검빨빨 거리두고 서기\r\n1인 감금 3번째 카드먹이기\r\n♣️ 감금♦️♥️♤♧\r\n♤ 감금♥️♦️♤♧\r\n♥️ 감금♤♧♥️♦️\r\n♦️ 감금♧♤♦️♥️\r\n 3인 감금 1번째카드 먹기\r\n♣️ 무빙♧♤♦️♥️ \r\n♥️ 무빙♥️♦️♤♧\r\n♦️ 무빙♦️♥️♧♤")
+        embed.add_field(name="\t v 48줄 v\t",value="주사위(스페이드-하트 / 클로버-다이아)\r\n 6시 검검빨빨 거리두고 서기\r\n1인 감금 3번째 카드먹이기\r\n♧ 감금♦️♥️♤♧\r\n♤ 감금♥️♦️♤♧\r\n♥️ 감금♤♧♥️♦️\r\n♦️ 감금♧♤♦️♥️\r\n 3인 감금 1번째카드 먹기\r\n♧ 무빙♧♤♦️♥️\r\n♤ 무빙♤♧♥️♦️ \r\n♥️ 무빙♥️♦️♤♧\r\n♦️ 무빙♦️♥️♧♤")
         embed.add_field(name="\t v 22줄 v\t",value="세이튼 찾기\r\n1-5-7-11 하트핑")
         embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/01/05/bbs/i13411451557.jpg')
         await message.channel.send(embed=embed)
@@ -146,18 +146,19 @@ async def on_message(message):
         embed = discord.Embed(title="아브3",color=0x0000ff,description = "준비물 : 수폭,회폭,시정")
         embed.add_field(name="\t v 140줄 v\t",value="운석+무력화\r\n1팟 곱3\r\n2팟 곱3+1")
         embed.add_field(name="\t v 100줄 v\t",value="무력화\r\n고양이눈=보면안됨\r\n둥근눈=보기")
-        embed.add_field(name="\t v 40줄 v\t",value="창/낫\r\n처음 밟은 장판과 동일한 장판 지우기")
+        embed.add_field(name="\t v 40줄 v\t",value="마름모: 1-6-11\r\n네모 : 12-5-7\r\n 빨노/파노")
+        embed.add_field(name="\t v 0줄 v\t",value="창/낫\r\n처음 밟은 장판과 동일한 장판 지우기")
         embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2021/11/10/bbs/i14528776276.jpg')
         await message.channel.send(embed=embed)        
 
     if message.content =="아브4":
         embed = discord.Embed(title="아브4",color=0x0000ff,description = "준비물 : 회폭,시정,화폭\r\n🟨노란규브 = 구슬파괴후 구슬먹고 장판위 무력\r\n(구슬파괴자,노란구슬먹은사람은 장판밖에서 구체막기)\r\n🟦파란큐브 = 전우조무력 / 변안전\r\n🟥빨간큐브=오브획득후 마법진이동 나머지 무력 / 모서리안전")
         embed.add_field(name="\t v 170줄 <\t",value="전멸기\r\n 첫 입장 색상")
-        embed.add_field(name="\t v 160줄 v\t",value="형상변환")
-        embed.add_field(name="\t v 135줄 v\t",value="형상변환\r\n120줄 전멸기 색상")
+        embed.add_field(name="\t v 160줄 v\t",value="형상변환\r\n색상암기")
+        embed.add_field(name="\t v 135줄 v\t",value="120줄 전멸기 색상\r\n형상변환")
         embed.add_field(name="\t v 120줄 v\t",value="전멸기\r\n135줄 색상패턴")
         embed.add_field(name="\t v 95줄 v\t",value="무력화\r\n별모양")
-        embed.add_field(name="\t v 65줄 v\t",value="형상변환")
+        embed.add_field(name="\t v 65줄 v\t",value="형상변환\r\n색상암기")
         embed.add_field(name="\t v 55줄 v\t",value="전멸기\r\n65줄 색상패턴")
         embed.add_field(name="\t v 40줄 v\t",value="형상변환")
         embed.add_field(name="\t v 20줄 v\t",value="무력화\r\n별모양")
@@ -188,7 +189,80 @@ async def on_message(message):
         embed.add_field(name="\t v 25줄 V\t",value="타일파괴\r\n 파메 중앙 금지")
         embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/02/02/bbs/i15252768436.png')
         await message.channel.send(embed=embed)      
+
+    if message.content =="하브1":
+        embed = discord.Embed(title="아브1",color=0x0000ff,description = "준비물 : 2파티 수폭or회폭\r\n1파티\r\n슬픔-투견(부파),석상(검은구슬 드리블)\r\n절망-투견(쫄마리제거),석상(일정시간마다 무력)\r\n2파티\r\분노-투견(타수),석상(피증디버프3~4무력)\r\n침식-투견(무력),석상(디버프시전시-상태이상기)")
+        embed.add_field(name="\t v 85줄 v\t",value="무력후 장판밟기/\r\n/1파티 곱3 - 2파티 곱3+1")
+        embed.add_field(name="\t v 45줄 v\t",value="카운터 6회\r\n카운터 친사람 화살막기")
+        embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2021/11/10/bbs/i14597737939.jpg')
+        await message.channel.send(embed=embed)
+
+    if message.content =="하브2":
+        embed = discord.Embed(title="아브2",color=0x0000ff,description = "준비물 : 수폭,회폭,시정")
+        embed.add_field(name="\t v 입장수초후 <\t",value="몽환의 기사등장 \r\n 빠르게 제거")
+        embed.add_field(name="\t v 130줄 <\t",value="주황구슬\r\n구체 먹은 3명이 다이아장판 밟기")
+        embed.add_field(name="\t v 110줄 v\t",value="파&빨-구슬\r\n파&빨표식자 구슬x\r\n표식없는 사람 구슬1개 먹기")
+        embed.add_field(name="\t v 80줄 v\t",value="무력화+구슬파괴\r\n검은구슬 모아서 처리\r\n흰구슬-타수\r\n보라구슬-무력\r\n검은 안개구슬 범위밖에 빠져있기 때리면 이동")
+        embed.add_field(name="\t v 45줄 v\t",value="빨간구슬 생존\r\n3,6,9,12 구슬 부순뒤  입장\r\n구슬위 표시로 입장가능  인원확인")
+        embed.add_field(name="\t v 40줄 v\t",value="몽환의 기사\r\n빠르게 제거")
+        embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2021/11/10/bbs/i14542768509.jpg')
+        await message.channel.send(embed=embed)       
+
+    if message.content =="하브3":
+        embed = discord.Embed(title="아브3",color=0x0000ff,description = "준비물 : 수폭,회폭,시정")
+        embed.add_field(name="\t v 140줄 v\t",value="운석+무력화\r\n1팟 곱3\r\n2팟 곱3 +1, +2\r\n(2팟은 2개 제거)")
+        embed.add_field(name="\t v 100줄 v\t",value="무력화\r\n노란운석 무력버프(최대3중첩)\r\n고양이눈=보면안됨\r\n둥근눈=보기")
+        embed.add_field(name="\t v 40줄 v\t",value="마름모: 1-6-11\r\n네모 : 12-5-7\r\n 빨노/파노")
+        embed.add_field(name="\t v 40줄 v\t",value="창/낫\r\n처음 밟은 장판과 동일한 장판 지우기")
+        embed.add_field(name="\t v 짤패턴차이 v\t",value="도형넣기 2개 / 넣지않는 도형은 먹으면 안됨")
+        embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2021/11/10/bbs/i14528776276.jpg')
+        await message.channel.send(embed=embed)        
+
+    if message.content =="하브4":
+        embed = discord.Embed(title="아브4",color=0x0000ff,description = "준비물 : 회폭,시정,화폭\r\n🟨노란규브 = 구슬파괴후 구슬먹고 장판위 무력\r\n(구슬파괴자,노란구슬먹은사람은 장판밖에서 구체막기)\r\n장판위 사람에게 보라색구슬 피격시 매혹\r\n변환기믹시 외부 충격파 발생\r\n보라색구슬 맞으면 똥장판 생성(중앙에서 피하다가 다 피한후 외곽으로 이동)\r\n🟦파란큐브 = 전우조무력(무력후 생성되는 노란장판 벗어나면 즉사) \r\n 변안전-똥장판생성\r\n🟥빨간큐브=오브획득후 마법진이동 나머지 무력 / 모서리안전 2회후 -노란 구체먹기\r\n별 변환 : 꼭지점 4군데 폭탄 생성 후 바닥레이저 생성")
+        embed.add_field(name="\t v 170줄 <\t",value="전멸기\r\n 첫 입장 색상")
+        embed.add_field(name="\t v 160줄 v\t",value="형상변환\r\n색상암기")
+        embed.add_field(name="\t v 135줄 v\t",value="120줄 전멸기 색상\r\n형상변환")
+        embed.add_field(name="\t v 120줄 v\t",value="전멸기\r\n135줄 색상패턴")
+        embed.add_field(name="\t v 95줄 v\t",value="무력화\r\n별모양")
+        embed.add_field(name="\t v 65줄 v\t",value="형상변환\r\n색상암기")
+        embed.add_field(name="\t v 55줄 v\t",value="전멸기\r\n65줄 색상패턴")
+        embed.add_field(name="\t v 40줄 v\t",value="형상변환")
+        embed.add_field(name="\t v 20줄 v\t",value="무력화\r\n별모양")
+        embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2021/11/10/bbs/i14589905148.jpg')
+        await message.channel.send(embed=embed)          
         
+
+    if message.content =="하브5":
+        embed = discord.Embed(title="아브5",color=0x0000ff,description = "도형/색상 랜덤 \r\n 별 = 8개\r\n 육각= 6개\r\n 네모 = 4개 \r\n 원 =2개\r\n 검노란장판-뭉쳐서 피해분산\r\n아브손가락 소용돌이 - 발믿 다른모양낙인 - 회오리빼기")
+        embed.add_field(name="\t v 180줄 v\t",value="낙인\r\n 번호 곱하기2")
+        embed.add_field(name="\t v 144줄 v\t",value="딜컷(문양사라질때까지)\r\n 문양확인 대기")
+        embed.add_field(name="\t v 140줄 v\t",value="데칼패턴 2번나온후 자리잡기 \r\n 십자모양\r\n 곱3자리이동\r\n원모양\r\n곱3+1 자리이동")
+        embed.add_field(name="\t v 110줄 v\t",value="무력후 3카운터-포탈-능지\r\n불들어온순서대로 무력\r\n1팟 인당3개 가시조심\r\n2팟1인 12개 가시장판 조심\r\n껍질까기+무력+순서기억")
+        embed.add_field(name="\t v 85줄 v\t",value="낙인\r\n 번호 곱하기2")
+        embed.add_field(name="\t v 54줄 v\t",value="딜컷(문양사라질때까지)\r\n50줄 곱3+1자리이동\r\n즉사기=9-3-12-6")
+        embed.add_field(name="\t v 50줄 v\t",value="운석4회후 자리잡기 \r\n 십자모양\r\n 곱3자리이동\r\n원모양\r\n곱3+1 자리이동")
+        embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/02/10/bbs/i16363527376.png')
+        await message.channel.send(embed=embed)         
+
+
+    if message.content =="아브6":
+        embed = discord.Embed(title="아브6",color=0x0000ff,description = "준비물 : 회수or암수/신속/시정")
+        embed.add_field(name="\t v 225줄 <\t",value="1문양 아제나")
+        embed.add_field(name="\t v 212줄 v\t",value="모래폭풍 - 디버프자는 모래폭풍 회피 훟 중력장파괴")
+        embed.add_field(name="\t v 188줄 v\t",value="노메 6시\r\n 파메\r\n11-12\r\n11-11-6\r\n5-5-7-7")
+        embed.add_field(name="\t v 137줄 v\t",value="노메 12시\r\n파메\r\n11-11-6")
+        embed.add_field(name="\t v 113줄 v\t",value="찬미\r\n중앙7시 대기후 이동\r\n1팟-곱3 / 2팟-곱3+1자리로이동\r\n노갈구슬2개 먹고 흰구슬 떨리면 들어가기\r\n 내부: 외부 브리핑대로 카운터or무력\r\n외부: 시계-무력 / 반시계-카운터")
+        embed.add_field(name="\t v 87줄 v\t",value="노메or 6시\r\n파메\r\n12-1-3\r\n11-11-7-7\r\n6-6-5\r\n1-1-11-11")
+        embed.add_field(name="\t v 62줄 v\t",value="모래폭풍 - 디버프자는 모래폭풍 회피 훟 중력장파괴")
+        embed.add_field(name="\t v 37줄 v\t",value="노메 12시")
+        embed.add_field(name="\t v 27줄 V\t",value="2문양\r\n이난나추천")
+        embed.add_field(name="\t v 7줄 V\t",value="파란운석-카운터 / 빨간운석-노터치\r\n보호막 파괴후 보라색구슬 1개 이상먹기\r\n파란 공증버프 먹고 7시 보라구채깨기")
+        embed.set_thumbnail(url='https://upload3.inven.co.kr/upload/2022/02/10/bbs/i16330968869.png')
+        await message.channel.send(embed=embed)      
+
+
+
     if message.content.startswith("노메"):
         mt11 = message.content[3:5].split(" ")[0]
         mt12 = message.content[5:7].split(" ")[0]
