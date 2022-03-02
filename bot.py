@@ -23,7 +23,7 @@ async def on_message(message):
         embed.add_field(name="\r\t v 발탄 v \r\t",value="발탄1\r\n발탄2\r\n노말=하드")
         embed.add_field(name="\t v 비아키스 v \t",value="비아1\r\n비아2\r\n비아3\r\n하드미제작")
         embed.add_field(name="\t v 쿠크세이튼 v\t",value="쿠크1\r\n쿠크2\r\n쿠크3")
-        embed.add_field(name="\t v 아브렐슈드 v\t",value="아브1\r\n아브2\r\n아브3\r\n아브4\r\n아브5\r\n아브6\r\n하드 미제작")
+        embed.add_field(name="\t v 아브렐슈드 v\t",value="아브1\r\n아브2\r\n아브3\r\n아브4\r\n아브5\r\n아브6\r\n하브1\r\n하브2\r\n하브3\r\n하브4\r\n하브5\r\n하브6")
         embed.add_field(name="\t v 그 외 기능 v\t",value="노메 0123(아브6장판생성시간계산)")
         await message.channel.send(embed=embed)
 
