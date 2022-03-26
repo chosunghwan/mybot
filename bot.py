@@ -275,4 +275,4 @@ async def on_message(message):
         sumt2=str(datetime.timedelta(seconds=nt))
         await message.channel.send(sumt2)   
 
-client.run(client.run('token'))
+client.run(os.environ['token'])
